@@ -1,4 +1,4 @@
-# Requirements:
+# Requirements
 - 3x VMs/devices on the same network with static IP addresses.
 - Device hostnames should be origin.test, gateway.test, destination.test.
 - origin.test and gateway.test should each have a user called 'user'
@@ -22,5 +22,5 @@ Open Claws Mail and configure as follows: Email address should be 'user@origin.t
 ## Configure Destination server
 From the 'user1' account on the destination server open Claws Mail and configure as follows:  Email address should be 'user@destination.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
 
-## Send emails from origin server
+## Send emails from Origin server
 From the 'user' account on the origin server open Claws Mail and try sending emails to user1@destination.test
