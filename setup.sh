@@ -18,10 +18,10 @@ cp filter-handler.sh filter-service.py /etc/postfix &&
 chmod +x filter-handler.sh filter-service.py &&
 
 # Append additional settings to the main.cf config file
-main.cf-additional-settings >> /etc/postfix/main.cf &&
+cat main.cf-additional-settings >> /etc/postfix/main.cf &&
 
 # Append additional settings to the master.cf config file
-master.cf-additional-settings >> /etc/postfix/master.cf &&
+cat master.cf-additional-settings >> /etc/postfix/master.cf &&
 
 # Set the relay maps
 postmap transport-maps &&
