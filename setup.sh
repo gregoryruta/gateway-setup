@@ -24,8 +24,8 @@ cat main.cf-additional-settings >> /etc/postfix/main.cf &&
 cat master.cf-additional-settings >> /etc/postfix/master.cf &&
 
 # Set the relay maps
-postmap transport-maps &&
-postmap relay-recipient-maps &&
+postmap /etc/postfix/transport-maps &&
+postmap /etc/postfix/relay-recipient-maps &&
 
 # Reload Postfix
 postfix reload
