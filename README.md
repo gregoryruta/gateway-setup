@@ -5,7 +5,7 @@
 - destination.test should have a user called 'user1'.
 - __NOTE: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server.__
 
-# Setup Gateway
+# Setup Gateway server
 From the 'user' account:  
 Make the setup.sh script executable: `chmod +x setup.sh`  
 Run the setup.sh script: `sudo ./setup.sh`  
@@ -14,12 +14,12 @@ The Gateway should now be setup.
 Run `sudo tail -f /var/log/mail.log` to view the live gateway Postfix log.
 
 # Testing
-## Configure origin server:
+## Configure Origin server
 From the 'user' account on the origin server:  
 Ensure emails sent from the origin server to a @destination.test email address are routed through the gateway by adding the following line to the /etc/hosts file: `<IP ADDRESS>    destination.test` (where \<IP ADDRESS> is the IP address of the gateway server).  
 Open Claws Mail and configure as follows: Email address should be 'user@origin.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
 
-## Configure destination server:
+## Configure Destination server
 From the 'user1' account on the destination server open Claws Mail and configure as follows:  Email address should be 'user@destination.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
 
 ## Send emails from origin server
