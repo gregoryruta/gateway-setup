@@ -24,7 +24,7 @@ Open Claws Mail and configure as follows: Email address should be user@origin.te
 ## Configure Destination server
 From the 'user1' account on the destination server:  
 Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'destination.test' as the domain.  
-Open Claws Mail and configure as follows:  Email address should be user@destination.test. Server type should be 'Local mbox file'. SMTP server address can remain unchanged for now.
+Open Claws Mail and configure as follows:  Email address should be user1@destination.test. Server type should be 'Local mbox file'. SMTP server address can remain unchanged for now.
 
 ## Send emails from Origin server
 From the 'user' account on the origin server:  
