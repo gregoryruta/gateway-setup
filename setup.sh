@@ -3,10 +3,13 @@
 # Check if Postfix is installed
 dpkg --status "postfix" &> /dev/null
 
-# If Postfix is not installed, install it
-if [ $? -ne 0 ]; then
-    apt install postfix
+# If Postfix is installed, uninstall it
+if [ $? -eq 0 ]; then
+    apt purge postfix
 fi
+
+# Install Postfix
+apt install postfix
 
 # Copy files required for the destination relay to work
 cp transport-maps relay-recipient-maps /etc/postfix &&
