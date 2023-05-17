@@ -6,7 +6,7 @@
 - __IMPORTANT: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server (Replace \<Destination IP Address> with the IP address. Retain the square brackets).__
 
 # Setup Gateway server
-From the 'user' account:  
+From the 'user' account on the gateway server:  
 Clone this repository somewhere inside the 'home' directory.  
 Make the setup.sh script executable: `chmod +x setup.sh`  
 Run the setup.sh script with root privileges: `sudo ./setup.sh`  
