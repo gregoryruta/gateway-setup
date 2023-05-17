@@ -17,13 +17,13 @@ Run `sudo tail -f /var/log/mail.log` to view the live gateway Postfix log.
 # Testing
 ## Configure Origin server
 From the 'user' account on the origin server:  
-Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'origin.test' as the domain. 
+Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'origin.test' as the domain.  
 Ensure emails sent from the origin server to a @destination.test email address are routed through the gateway by adding the following line to the /etc/hosts file: `<IP ADDRESS>    destination.test` (where \<IP ADDRESS> is the IP address of the gateway server).  
 Open Claws Mail and configure as follows: Email address should be user@origin.test. Server type should be 'Local mbox file'. SMTP server address should be 'destination.test'.
 
 ## Configure Destination server
 From the 'user1' account on the destination server:  
-Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'destination.test' as the domain. 
+Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'destination.test' as the domain.  
 Open Claws Mail and configure as follows:  Email address should be user@destination.test. Server type should be 'Local mbox file'. SMTP server address can remain unchanged for now.
 
 ## Send emails from Origin server
