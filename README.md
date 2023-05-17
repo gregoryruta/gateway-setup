@@ -3,7 +3,7 @@
 - Device hostnames should be origin.test, gateway.test, destination.test.
 - origin.test and gateway.test should each have a user called 'user'
 - destination.test should have a user called 'user1' (the destination - like an organisation - can have multiple users)
-- __IMPORTANT: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server.__
+- __IMPORTANT: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server (Replace \<Destination IP Address> with the IP address).__
 
 # Setup Gateway server
 From the 'user' account:  
