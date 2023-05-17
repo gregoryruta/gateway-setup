@@ -17,6 +17,9 @@ cp transport-maps relay-recipient-maps /etc/postfix &&
 # Copy filter handler and filter service
 cp filter-handler.sh filter-service.py /etc/postfix &&
 
+# Make filter handler and filter service executable
+chmod +x /etc/postfix/filter-handler.sh /etc/postfix/filter-service.py &&
+
 # Append additional settings to the main.cf config file
 cat main.cf-additional-settings >> /etc/postfix/main.cf &&
 
