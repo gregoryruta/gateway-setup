@@ -7,6 +7,7 @@
 
 # Setup Gateway server
 From the 'user' account:  
+Clone this repository somewhere inside the 'home' directory.  
 Make the setup.sh script executable: `chmod +x setup.sh`  
 Run the setup.sh script: `sudo ./setup.sh`  
 If Postfix is not installed, it will install. Choose the 'Internet Site' option, and enter 'gateway.test' as the domain.  
