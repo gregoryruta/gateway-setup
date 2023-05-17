@@ -1,9 +1,9 @@
 # Requirements
-- 3x VMs/devices on the same network with static IP addresses.
+- 3x VMs/devices on the same network each with static IP addresses.
 - Device hostnames should be origin.test, gateway.test, destination.test.
 - origin.test and gateway.test should each have a user called 'user'
-- destination.test should have a user called 'user1'.
-- __NOTE: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server.__
+- destination.test should have a user called 'user1' (the destination - like an organisation - can have multiple users)
+- __IMPORTANT: Before running the setup.sh script, edit the transport-maps file to include the IP address of the destination server.__
 
 # Setup Gateway server
 From the 'user' account:  
