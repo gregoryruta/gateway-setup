@@ -20,7 +20,7 @@ Ensure emails sent from the origin server to a @destination.test email address a
 Open Claws Mail on the origin server. Email address should be 'user@origin.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
 
 ## Configure destination server:
-Open Claws Mail on the origin server. Email address should be 'user@destination.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
+Open Claws Mail on the destination server. Email address should be 'user@destination.test'. Server type should be 'Local mbox file'. SMTP server address should be 'gateway.test'.
 
 ## Send Emails from origin server
-Using Claws Mail, try sending emails to user1@destiantion.test
+Using Claws Mail, try sending emails to user1@destination.test
