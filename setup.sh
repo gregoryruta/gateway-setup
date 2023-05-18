@@ -9,7 +9,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # Install Postfix
-apt install postfix
+apt install postfix &&
 
 # Copy files required for the destination relay to work
 cp transport-maps relay-recipient-maps /etc/postfix &&
