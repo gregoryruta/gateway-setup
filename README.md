@@ -11,7 +11,7 @@
 - Create user: `sudo adduser user && sudo adduser user sudo`  
 - Login as user.  
 - Clone this repository somewhere inside the 'home' directory.  
-- Edit the transport-maps file to include the IP address of the destination server (replace \<Destination IP Address> with the destination IP address. Retain the square brackets)  
+- Edit the transport-maps file to include the IP address of the destination server (replace \<DESTINATION SERVER IP ADDRESS> with the IP address of the destination server. Retain the square brackets)  
 - Make the setup.sh script executable: `chmod +x setup.sh`  
 - Run the setup.sh script with elevated privileges: `sudo ./setup.sh`  
 - Postfix will install or reinstall. Choose the 'Internet Site' option, and enter 'gateway.test' as the domain.  
@@ -25,7 +25,7 @@
 - Create user: `sudo adduser user && sudo adduser user sudo`  
 - Login as user.  
 - Install Postfix: `sudo apt install postfix`. Choose the 'Internet Site' option, and enter 'origin.test' as the domain.  
-- Ensure emails sent from the origin server to a @destination.test email address are routed through the gateway by adding the following line to the /etc/hosts file: `<IP ADDRESS>    destination.test` (where \<IP ADDRESS> is the IP address of the gateway server).  
+- Ensure emails sent from the origin server to a @destination.test email address are routed through the gateway by adding the following line to the /etc/hosts file: `<GATEWAY SERVER IP ADDRESS>    destination.test` (where \<GATEWAY SERVER IP ADDRESS> is the IP address of the gateway server).  
 - Open Claws Mail and configure as follows: Email address should be user@origin.test. Server type should be 'Local mbox file'. SMTP server address should be 'destination.test'.
 
 ## Configure Destination server

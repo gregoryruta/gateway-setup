@@ -1,1 +1,1 @@
-destination.test smtp:[<Destination IP Address>]:25
+destination.test smtp:[<DESTINATION SERVER IP ADDRESS>]:25
